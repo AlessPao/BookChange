@@ -1,0 +1,271 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('fonts/dancing-script.woff') format('woff');
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background-color: #A9EAB7;
+  color: #fff;
+  padding: 1rem;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Añade margen derecho para separar el título del formulario */
+  }
+
+header i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem; 
+}
+
+header form {
+    display: flex;
+    flex-grow: 1; /* Para que el formulario ocupe el espacio disponible */
+  }
+  
+  header input {
+    flex-grow: 1; /* Para que el campo de entrada ocupe el espacio restante */
+    padding: 0.5rem 1rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    max-width: 70%; /* Ajusta el ancho máximo */
+    min-width: 200px; /* Ajusta el ancho mínimo */
+  }
+  
+  header button[type="submit"] {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #6d8bff;
+    color: #fff;
+    cursor: pointer;
+    max-width: 30%; /* Ajusta el ancho máximo */
+    min-width: 60px; /* Ajusta el ancho mínimo */
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
+  }
+  
+  .login-register {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-btn{
+
+    padding: 0.5rem 1rem;
+    background-color: #88DCF7;
+    color: #000; /* Cambia el color del texto a negro */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px; /* Añade un margen derecho para separar los botones */
+    
+    
+
+  }
+
+
+.register-btn {
+  padding: 0.5rem 1rem;
+  background-color: #88DCF7;
+  color: #000; /* Cambia el color del texto a negro */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+  
+
+/* Main */
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.title {
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 1rem; /* Añade margen inferior si es necesario */
+}
+
+/* Añade estos estilos para agregar espacio entre la imagen y el título, y reducir el tamaño del título */
+.book img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px; /* Ajusta la altura máxima según tus preferencias */
+}
+
+/* Estilos actualizados */
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* Elimina la propiedad box-shadow para quitar la sombra */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* Elimina la propiedad border-radius para quitar el borde redondeado */
+  /* border-radius: 5px; */
+  padding: 1rem;
+  flex: 0 0 calc(33.33% - 20px); /* Calcula el ancho de cada libro para que haya 3 en cada fila */
+  margin-bottom: 20px; /* Espacio entre las filas de libros */
+}
+
+.book h3 {
+  margin-top: 1rem; /* Añade espacio entre la imagen y el título */
+  font-size: 1.2rem; /* Ajusta el tamaño de la letra del título */
+}
+
+.book button.btn {
+  background-color: #A9EAB7; /* Cambia el color de fondo */
+  border: none;
+  border-radius: 25px; /* Hace que los botones sean redondeados */
+  padding: 0.5rem 1rem;
+  color: #fff; /* Cambia el color del texto a blanco */
+  cursor: pointer;
+}
+
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #5271ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+
+  header .container {
+    flex-direction: column;
+  }
+  
+  header form {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .books {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+.somos .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.somos img {
+    max-width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para el botón "Empieza ya" */
+.somos .custom-btn {
+  background-color: #A9EAB7; /* Cambia el color de fondo */
+  border: none;
+  border-radius: 25px; /* Hace que el botón sea redondeado */
+  padding: 0.5rem 1rem;
+  color: #fff; /* Cambia el color del texto a blanco */
+  cursor: pointer;
+}
+
+.stesp_content-width {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.message p {
+  font-family: 'Dancing Script', cursive; /* Usamos la fuente personalizada y cursive como fuente genérica de respaldo */
+  font-size: 24px; /* Tamaño de fuente personalizado según tus preferencias */
+  color: #000; /* Color de texto negro */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 20px; /* Añade un espacio superior para separar el mensaje de los libros */
+}
+
+.footer {
+  background-color: #DECC25;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+}
+
+.footer-subtitle {
+  font-size: 14px;
+}
+
+.footer-icons {
+  display: flex;
+}
+
+.footer-icon {
+  margin-right: 10px; /* Añade espacio entre los iconos */
+  text-decoration: none; /* Elimina el subrayado en los enlaces */
+}
+
+.footer-icon img {
+  width: 30px; /* Ajusta el tamaño de los iconos de redes sociales */
+  height: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  color: #fff; /* Cambia el color del texto a blanco */
+  font-size: 1.5rem; /* Ajusta el tamaño del logo según tus preferencias */
+}
+
+.footer-logo i {
+  margin-right: 0.5rem; /* Añade un margen derecho para separar el icono del texto */
+}
